@@ -23,7 +23,7 @@
         <field name="report_file">dev_doc_printed_invoice.report_account_invoice_document</field>
         <field name="print_report_name">'Factura_'+object.name.replace('/','_')+'.pdf'</field>
         <!-- <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field> -->
-        <field name="binding_model_id" eval="False"/>
+        <field name="binding_model_id" eval="account.model_account_move"/>
         <field name="binding_type">report</field>
         <field name="paperformat_id" ref="dev_doc_printed_invoice.paperformat_pri_account_invoice"/>
     </record>
