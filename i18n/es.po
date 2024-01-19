@@ -1,0 +1,286 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* dev_doc_printed_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-30 10:32+0000\n"
+"PO-Revision-Date: 2018-06-30 10:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.report_print_account_invoice_template
+msgid "<span style=\"font-weight:bold\"> Draft Invoice</span>"
+msgstr "<span style=\"font-weight:bold\"> Proyecto de factura</span>"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_code_width
+msgid "Code Width"
+msgstr "Ancho del código"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_color
+msgid "Color"
+msgstr "Color"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_day_m_left
+msgid "Day From Left"
+msgstr "Día de la izquierda"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_display_name
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_report_dev_doc_printed_invoice_report_account_invoice_document_display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_address_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_contact_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_date_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_line_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_number_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_partner_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_phone_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_tax_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_total_bold
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_untax_bold
+msgid "Font Bold"
+msgstr "Negrita"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_address_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_contact_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_date_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_line_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_num_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_partner_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_phone_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_tax_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_total_font_size
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_untax_font_size
+msgid "Font Size"
+msgstr "Tamaño de fuente"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_address_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_contact_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_line_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_number_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_partner_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_phone_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_tax_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_total_m_left
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_untax_m_left
+msgid "From Left"
+msgstr "Fuente izquierda"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_address_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_contact_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_date_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_line_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_number_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_partner_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_phone_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_tax_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_total_m_top
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_untax_m_top
+msgid "From Top"
+msgstr "Fuente superior"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_id
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_report_dev_doc_printed_invoice_report_account_invoice_document_id
+msgid "ID"
+msgstr "CARNÉ DE IDENTIDAD"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model,name:dev_doc_printed_invoice.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.actions.act_window,name:dev_doc_printed_invoice.invoice_print_config_action
+#: model:ir.ui.menu,name:dev_doc_printed_invoice.invoice_print_config_menu
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_config_tree_view
+msgid "Invoice Format"
+msgstr "Formato de factura"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Invoice Report Format"
+msgstr "Formato de informe de factura"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config___last_update
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_report_dev_doc_printed_invoice_report_account_invoice_document___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_write_date
+msgid "Last Updated on"
+msgstr "Ultima actualizacion en"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_month_m_left
+msgid "Month From Left"
+msgstr "Mes desde la izquierda"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_name
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Name"
+msgstr "Nombre"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_name_width
+msgid "Name Width"
+msgstr "Ancho del nombre"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_num_of_line
+msgid "No of Line Break"
+msgstr "No de Line Break"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_price_width
+msgid "Price Width"
+msgstr "Ancho de precio"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_address
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Address"
+msgstr "Imprimir dirección"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_total
+msgid "Print Amount Total"
+msgstr "Importe de impresión total"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_contact
+msgid "Print Contact"
+msgstr "Imprimir contacto"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_date
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Date"
+msgstr "Fecha de impresion"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.actions.report.xml,name:dev_doc_printed_invoice.action_print_invoice_template
+msgid "Print Invoice"
+msgstr "Imprimir factura"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_line
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Lines"
+msgstr "Líneas de impresión"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_number
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Number"
+msgstr "Número de impresión"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_partner
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Partner"
+msgstr "Print Partner"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Partner Contact"
+msgstr "Print Partner Contact"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_phone
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Phone"
+msgstr "Imprimir teléfono"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_tax
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Tax Amount"
+msgstr "Importe del impuesto a la impresión"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Total Amount"
+msgstr "Imprimir cantidad total"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_untax
+#: model:ir.ui.view,arch_db:dev_doc_printed_invoice.invoice_print_formate_form_view
+msgid "Print Untaxed Amount"
+msgstr "Imprimir cantidad no gravada"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_qty_width
+msgid "Qunatity Width"
+msgstr "Ancho de la cantidad"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_account_invoice_formate_id
+msgid "Report Formate"
+msgstr "Formato de informe"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_is_default
+msgid "Set Default"
+msgstr "Establecer predeterminado"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_total_width
+msgid "Total Width"
+msgstr "Ancho total"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model.fields,field_description:dev_doc_printed_invoice.field_invoice_print_config_year_m_left
+msgid "Year From Left"
+msgstr "Año de izquierda"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model,name:dev_doc_printed_invoice.model_invoice_print_config
+msgid "invoice.print.config"
+msgstr "invoice.print.config"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model,name:dev_doc_printed_invoice.model_report_dev_doc_printed_invoice_report_account_invoice_document
+msgid "report.dev_doc_printed_invoice.report_account_invoice_document"
+msgstr "report.dev_doc_printed_invoice.report_account_invoice_document"
+
+#. module: dev_doc_printed_invoice
+#: model:ir.model,name:dev_doc_printed_invoice.model_report_dev_pri_printed_invoice_report_account_invoice_document
+msgid "report.dev_pri_printed_invoice.report_account_invoice_document"
+msgstr "report.dev_pri_printed_invoice.report_account_invoice_document"
+

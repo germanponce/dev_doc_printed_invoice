@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+    <record id="invoice_print_formate_form_view" model="ir.ui.view">
+        <field name="name">invoice.print.formate.form</field>
+        <field name="model">invoice.print.config</field>
+        <field name="arch" type="xml">
+            <form string="Invoice Report Format">
+                <sheet>
+                    <label for="name" string="Name" class="oe_edit"/>
+                    <h1>
+                        <field name="name"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="num_of_line"/>
+                            <field name="is_default"/>
+                        </group>
+                        <group>
+                            <field name="color"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Number">
+                        <group>
+                            <field name='is_number'/>
+                            <field name="is_number_bold"/>
+                            <field name="num_font_size"/>
+                        </group>
+                        <group>
+                            <field name='number_m_top' attrs="{'required':[('is_number','=',True)]}"/>
+                            <field name='number_m_left' attrs="{'required':[('is_number','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Partner">
+                        <group>
+                            <field name='is_partner'/>
+                            <field name="is_partner_bold"/>
+                            <field name="partner_font_size"/>
+                        </group>
+                        <group>
+                            <field name='partner_m_top' attrs="{'required':[('is_partner','=',True)]}"/>
+                            <field name='partner_m_left' attrs="{'required':[('is_partner','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Partner Contact">
+                        <group>
+                            <field name='is_contact'/>
+                            <field name="is_contact_bold"/>
+                            <field name="contact_font_size"/>
+                        </group>
+                        <group>
+                            <field name='contact_m_top' attrs="{'required':[('is_contact','=',True)]}"/>
+                            <field name='contact_m_left' attrs="{'required':[('is_contact','=',True)]}"/>
+                        </group>
+                    </group>
+
+
+                    <group string="Print Address">
+                        <group>
+                            <field name='is_address'/>
+                            <field name="is_address_bold"/>
+                            <field name="address_font_size"/>
+                        </group>
+                        <group>
+                            <field name='address_m_top' attrs="{'required':[('is_address','=',True)]}"/>
+                            <field name='address_m_left' attrs="{'required':[('is_address','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Date">
+                        <group>
+                            <field name='is_date'/>
+                            <field name="is_date_bold"/>
+                            <field name="date_font_size"/>
+                        </group>
+                        <group>
+                            <field name='date_m_top' attrs="{'required':[('is_date','=',True)]}"/>
+                            <field name='day_m_left' attrs="{'required':[('is_date','=',True)]}"/>
+                            <field name='month_m_left' attrs="{'required':[('is_date','=',True)]}"/>
+                            <field name='year_m_left' attrs="{'required':[('is_date','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Phone">
+                        <group>
+                            <field name='is_phone'/>
+                            <field name="is_phone_bold"/>
+                            <field name="phone_font_size"/>
+                        </group>
+                        <group>
+                            <field name='phone_m_top' attrs="{'required':[('is_phone','=',True)]}"/>
+                            <field name='phone_m_left' attrs="{'required':[('is_phone','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Lines">
+                        <group>
+                            <field name='is_line'/>
+                            <field name="is_line_bold"/>
+                            <field name="line_font_size"/>
+                        </group>
+                        <group>
+                            <field name='line_m_top' attrs="{'required':[('is_line','=',True)]}"/>
+                            <field name='line_m_left' attrs="{'required':[('is_line','=',True)]}"/>
+                        </group>
+                        <group>
+                            <field name='code_width' attrs="{'required':[('is_line','=',True)]}"/>
+                            <field name='qty_width' attrs="{'required':[('is_line','=',True)]}"/>
+                            <field name='name_width' attrs="{'required':[('is_line','=',True)]}"/>
+                        </group>
+                        <group>
+                            <field name='price_width' attrs="{'required':[('is_line','=',True)]}"/>
+                            <field name='total_width' attrs="{'required':[('is_line','=',True)]}"/>
+                            <field name='discount_width' attrs="{'required':[('is_line','=',True)]}" />
+                            
+                        </group>
+                    </group>
+
+                    <group string="Print Untaxed Amount">
+                        <group>
+                            <field name='is_untax'/>
+                            <field name="is_untax_bold"/>
+                            <field name="untax_font_size"/>
+                        </group>
+                        <group>
+                            <field name='untax_m_top' attrs="{'required':[('is_untax','=',True)]}"/>
+                            <field name='untax_m_left' attrs="{'required':[('is_untax','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Tax Amount">
+                        <group>
+                            <field name='is_tax'/>
+                            <field name="is_tax_bold"/>
+                            <field name="tax_font_size"/>
+                        </group>
+                        <group>
+                            <field name='tax_m_top' attrs="{'required':[('is_tax','=',True)]}"/>
+                            <field name='tax_m_left' attrs="{'required':[('is_tax','=',True)]}"/>
+                        </group>
+                    </group>
+
+                    <group string="Print Total Amount">
+                        <group>
+                            <field name='is_total'/>
+                            <field name="is_total_bold"/>
+                            <field name="total_font_size"/>
+                        </group>
+                        <group>
+                            <field name='total_m_top' attrs="{'required':[('is_total','=',True)]}"/>
+                            <field name='total_m_left' attrs="{'required':[('is_total','=',True)]}"/>
+                        </group>
+                    </group>
+                    
+                    <group string="Print Salesman">
+                        <group>
+                            <field name='is_sales_man'/>
+                            <field name="sales_man_bold"/>
+                            <field name="sales_man_font_size"/>
+                        </group>
+                        <group>
+                            <field name='sales_man_m_top' attrs="{'required':[('is_sales_man','=',True)]}"/>
+                            <field name='sales_man_m_left' attrs="{'required':[('is_sales_man','=',True)]}"/>
+                        </group>
+                    </group>
+                    
+                    
+                    <group string="Print Payment Terms">
+                        <group>
+                            <field name='is_payment_term'/>
+                            <field name="payment_term_font_bold"/>
+                            <field name="payment_term_font_size"/>
+                        </group>
+                        <group>
+                            <field name='payment_term_m_top' attrs="{'required':[('is_payment_term','=',True)]}"/>
+                            <field name='payment_term_m_left' attrs="{'required':[('is_payment_term','=',True)]}"/>
+                        </group>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="invoice_print_config_tree_view" model="ir.ui.view">
+        <field name="name">invoice.print.config.tree</field>
+        <field name="model">invoice.print.config</field>
+        <field name="arch" type="xml">
+            <tree string="Invoice Format">
+                <field name="name"/>
+                <field name="is_default"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="invoice_print_config_action" model="ir.actions.act_window">
+        <field name="name">Invoice Format</field>
+        <field name="res_model">invoice.print.config</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--  Menu Items-->
+    <menuitem name="Invoice Format"
+              id="invoice_print_config_menu"
+              parent="account.menu_finance_configuration"
+              action="invoice_print_config_action"
+              sequence="1"/>
+
+</odoo>

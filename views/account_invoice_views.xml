@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle
+ -->
+<odoo>
+    <record id="view_account_invoice_formate_form" model="ir.ui.view">
+        <field name="name">account.invoice.formate.form.view</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_invoice']" position="after">
+                <field name="formate_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_vender_invoice_formate_form" model="ir.ui.view">
+        <field name="name">vender.invoice.formate.form.view</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_invoice']" position="after">
+                <field name="formate_id"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
