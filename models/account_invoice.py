@@ -9,6 +9,7 @@
 ##############################################################################
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError, RedirectWarning, ValidationError
 
 
 class AccountInvoice(models.Model):
@@ -19,17 +20,17 @@ class AccountInvoice(models.Model):
         config_ids = self.env['invoice.print.config'].search([('is_default','=',True)],limit=1)
         return config_ids.id
     
-    formate_id = fields.Many2one('invoice.print.config','Report Formate',default=_default_formate)
+    formate_id = fields.Many2one('invoice.print.config','Formato de Reporte',default=_default_formate)
 
     def get_move_browse(self):
         context = self._context
-        print ("######## get_move_browse ....................")
-        print ("######## context ....................", context)
         return True
 
 
     def print_invoice_dynamic(self):
         for rec in self:
+            if not rec.formate_id:
+                raise UserError("No se tiene selecionado un Formato.")
             [data] = rec.read()
             datas = {
                         'ids': [rec.id],
