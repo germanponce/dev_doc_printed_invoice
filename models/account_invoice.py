@@ -26,4 +26,30 @@ class AccountInvoice(models.Model):
         print ("######## get_move_browse ....................")
         print ("######## context ....................", context)
         return True
+
+
+    def print_invoice_dynamic(self):
+        for rec in self:
+            [data] = rec.read()
+            datas = {
+                        'ids': [rec.id],
+                        'model': 'account.move',
+                        'docs': rec,
+                        'form': data,
+                        'record_ids': [rec.id],
+                        'record_id': rec.id,
+
+                    }
+
+            # act = self.env.ref('fx_workflow_sale_city.report_ticket_surtidor_from_so').with_context(datas).report_action(sale, datas)
+            # act['products_info'] = products_info
+            # return act
+
+            report_from_action = self.env.ref('fx_workflow_sale_city.report_ticket_surtidor_from_so')
+            printing_printer_found_in_report = self.env['sale.order'].search_printer_for_report(report_from_action)
+            
+            act = self.env.ref('fx_workflow_sale_city.report_ticket_surtidor_from_so').with_context(datas).report_action(sale, datas)
+            act['products_info'] = products_info
+            return act
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
