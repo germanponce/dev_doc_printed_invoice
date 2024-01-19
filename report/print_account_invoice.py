@@ -23,20 +23,17 @@ class account_invoice_report(models.AbstractModel):
         return t
 
     
-    @api.multi
     def get_discount(self,obj):
         discount = 0
         for line in obj.invoice_line_ids:
             discount += (line.price_subtotal * line.discount) / 100
         return discount
             
-    @api.multi
     def get_child(self,partner):
         for child in partner.child_ids:
             return child.name
         return ''
                 
-    @api.multi
     def get_address(self,partner):
         add = ''
         if partner:
@@ -54,7 +51,6 @@ class account_invoice_report(models.AbstractModel):
                 add = partner.city
         return add        
             
-    @api.multi
     def _get_lines(self,obj):
         f_lst =[]
         lst=[]
@@ -78,7 +74,6 @@ class account_invoice_report(models.AbstractModel):
             f_lst.append({'values':lst,})
         return f_lst
 
-    @api.multi
     def _get_report_values(self, docids, data=None):
         docs = self.env['account.invoice'].browse(docids)
         return {'doc_ids': docids,
