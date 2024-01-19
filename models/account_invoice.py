@@ -44,11 +44,8 @@ class AccountInvoice(models.Model):
             # act = self.env.ref('fx_workflow_sale_city.report_ticket_surtidor_from_so').with_context(datas).report_action(sale, datas)
             # act['products_info'] = products_info
             # return act
-
-            report_from_action = self.env.ref('fx_workflow_sale_city.report_ticket_surtidor_from_so')
-            printing_printer_found_in_report = self.env['sale.order'].search_printer_for_report(report_from_action)
             
-            act = self.env.ref('fx_workflow_sale_city.report_ticket_surtidor_from_so').with_context(datas).report_action(sale, datas)
+            act = self.env.ref('dev_doc_printed_invoice.action_print_invoice_template').with_context(datas).report_action(rec, datas)
             act['products_info'] = products_info
             return act
 
