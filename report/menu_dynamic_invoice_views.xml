@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="paperformat_pri_account_invoice" model="report.paperformat">
-        <field name="name">Pri-Account Invoice</field>
+        <field name="name">Pri-Account Factura</field>
         <field name="format">custom</field>
         <field name="page_height">280</field>
         <field name="page_width">216</field>

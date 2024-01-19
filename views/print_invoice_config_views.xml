@@ -9,9 +9,9 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
         <field name="name">invoice.print.formate.form</field>
         <field name="model">invoice.print.config</field>
         <field name="arch" type="xml">
-            <form string="Invoice Report Format">
+            <form string="Formato de informe de factura">
                 <sheet>
-                    <label for="name" string="Name" class="oe_edit"/>
+                    <label for="name" string="Descripción" class="oe_edit"/>
                     <h1>
                         <field name="name"/>
                     </h1>
@@ -25,7 +25,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Number">
+                    <group string="Número de impresión">
                         <group>
                             <field name='is_number'/>
                             <field name="is_number_bold"/>
@@ -62,7 +62,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                     </group>
 
 
-                    <group string="Print Address">
+                    <group string="Imprimir dirección">
                         <group>
                             <field name='is_address'/>
                             <field name="is_address_bold"/>
@@ -74,7 +74,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Date">
+                    <group string="Fecha de impresion">
                         <group>
                             <field name='is_date'/>
                             <field name="is_date_bold"/>
@@ -88,7 +88,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Phone">
+                    <group string="Imprimir teléfono">
                         <group>
                             <field name='is_phone'/>
                             <field name="is_phone_bold"/>
@@ -100,7 +100,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Lines">
+                    <group string="Líneas de impresión">
                         <group>
                             <field name='is_line'/>
                             <field name="is_line_bold"/>
@@ -123,7 +123,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Untaxed Amount">
+                    <group string="Imprimir monto sin impuestos">
                         <group>
                             <field name='is_untax'/>
                             <field name="is_untax_bold"/>
@@ -135,7 +135,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Tax Amount">
+                    <group string="Imprimir monto de impuestos">
                         <group>
                             <field name='is_tax'/>
                             <field name="is_tax_bold"/>
@@ -147,7 +147,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
-                    <group string="Print Total Amount">
+                    <group string="Imprimir el Total">
                         <group>
                             <field name='is_total'/>
                             <field name="is_total_bold"/>
@@ -159,7 +159,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
                     
-                    <group string="Print Salesman">
+                    <group string="Imprimir Vendedor">
                         <group>
                             <field name='is_sales_man'/>
                             <field name="sales_man_bold"/>
@@ -172,7 +172,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                     </group>
                     
                     
-                    <group string="Print Payment Terms">
+                    <group string="Impresión de Terminos y Condiciones">
                         <group>
                             <field name='is_payment_term'/>
                             <field name="payment_term_font_bold"/>
@@ -193,7 +193,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
         <field name="name">invoice.print.config.tree</field>
         <field name="model">invoice.print.config</field>
         <field name="arch" type="xml">
-            <tree string="Invoice Format">
+            <tree string="Formato de Impresión">
                 <field name="name"/>
                 <field name="is_default"/>
             </tree>
@@ -202,13 +202,13 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
 
 
     <record id="invoice_print_config_action" model="ir.actions.act_window">
-        <field name="name">Invoice Format</field>
+        <field name="name">Formato de Impresión</field>
         <field name="res_model">invoice.print.config</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <!--  Menu Items-->
-    <menuitem name="Invoice Format"
+    <menuitem name="Formato de factura"
               id="invoice_print_config_menu"
               parent="account.menu_finance_configuration"
               action="invoice_print_config_action"
