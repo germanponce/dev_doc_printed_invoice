@@ -31,7 +31,11 @@ class AccountInvoice(models.Model):
         print ("############ get_invoice_name >>>>>>>>> ")
         print ("############ context ", context)
         print ("############ self ", self)
-        return "NO HAY"
+        if rec.name:
+            name_invoice = self.name.replace("/","_")
+        else:
+            name_invoice = "Borrador"
+        return name_invoice
 
     def print_invoice_dynamic(self):
         for rec in self:
