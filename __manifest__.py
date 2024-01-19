@@ -10,7 +10,7 @@
 
 {
     'name': 'Doc Pre Printed Invoice Report',
-    'version': '12.0.1.0',
+    'version': '15.0.1.0',
     'sequence': 1,
     'category': 'Generic Modules/Accounting',
     'description':
@@ -21,7 +21,7 @@
 
     """,
     'summary': 'Pre Printed Invoice Report',
-    'author': 'Devintelle Consulting Service Pvt.Ltd',
+    'author': 'Devintelle Consulting Service Pvt.Ltd & German Ponce D.',
     'website': 'http://www.devintellecs.com',
     'depends': ['account'],
     'data': [

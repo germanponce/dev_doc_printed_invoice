@@ -12,7 +12,7 @@ from odoo import models, fields, api
 
 
 class AccountInvoice(models.Model):
-    _inherit ='account.invoice'
+    _inherit ='account.move'
 
     @api.model
     def _default_formate(self):

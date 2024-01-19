@@ -75,9 +75,9 @@ class account_invoice_report(models.AbstractModel):
         return f_lst
 
     def _get_report_values(self, docids, data=None):
-        docs = self.env['account.invoice'].browse(docids)
+        docs = self.env['account.move'].browse(docids)
         return {'doc_ids': docids,
-                'doc_model': 'account.invoice',
+                'doc_model': 'account.move',
                 'docs': docs,
                 'get_lines': self._get_lines,
                 'convert': self.convert,
