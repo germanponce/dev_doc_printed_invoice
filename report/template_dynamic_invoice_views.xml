@@ -11,6 +11,9 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
         <t t-foreach="get_lines(o)" t-as="p">
             <t t-set="total_page" t-value="total_page+1"/>
         </t>
+        <h1>
+            <span t-esc="get_lines" />
+        </h1>
         <t t-set="s_page" t-value="0"/>
         <t t-foreach="get_lines(o)" t-as="l">
             <t t-set="s_page" t-value="s_page+1"/>
@@ -20,13 +23,13 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         <div t-attf-style="margin-left:#{o.formate_id.number_m_left}px;margin-top:#{o.formate_id.number_m_top}px;position: absolute;font-size:#{o.formate_id.num_font_size}px;">
                             <t t-if="o.formate_id.is_number_bold">
                                 <t t-if="not o.name">
-                                    <span style="font-weight:bold">Draft Invoice</span>
+                                    <span style="font-weight:bold">Factura Borrador</span>
                                 </t>
                                 <span style="font-weight:bold" t-field="o.name"/>
                             </t>
                             <t t-if="not o.formate_id.is_number_bold">
                                 <t t-if="not o.name">
-                                    <span style="font-weight:bold">Draft Invoice</span>
+                                    <span style="font-weight:bold">Factura Borrador</span>
                                 </t>
                                 <span t-field="o.name"/>
                             </t>
