@@ -89,10 +89,6 @@ class account_invoice_report(models.AbstractModel):
     @api.model
     def _get_report_values(self, docids, data=None):
         context = self._context
-        print ("########## _get_report_values >>>>>>>>>>>> ")
-        print ("########## context: ", context)
-        print ("########## docids: ", docids)
-        print ("########## data: ", data)
         context = self._context
         if not docids:
             payslip_ids = context.get('active_ids', [])
