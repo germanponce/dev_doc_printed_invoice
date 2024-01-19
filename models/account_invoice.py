@@ -46,7 +46,6 @@ class AccountInvoice(models.Model):
             # return act
             
             act = self.env.ref('dev_doc_printed_invoice.action_print_invoice_template').with_context(datas).report_action(rec, datas)
-            act['products_info'] = products_info
             return act
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
