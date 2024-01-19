@@ -97,8 +97,8 @@ class account_invoice_report(models.AbstractModel):
         if not docids:
             payslip_ids = context.get('active_ids', [])
             docids = payslip_ids
-        payslip_obj = self.env['hr.payslip']
-        docs_br = payslip_obj.browse(docids)
+        account_move = self.env['account.move']
+        docs_br = account_move.browse(docids)
         
         data_args = {
                         'doc_ids': docids,
