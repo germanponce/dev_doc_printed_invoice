@@ -249,7 +249,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
     <template id="report_account_invoice_document">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
-                <t t-set="o2" t-value="docs.get_move_browse(record_id)"/>
+                <t t-set="o2" t-value="docs.get_move_browse()"/>
                 <t t-call="dev_doc_printed_invoice.report_print_account_invoice_template" t-lang="o.partner_id.lang"/>
 
             </t>
