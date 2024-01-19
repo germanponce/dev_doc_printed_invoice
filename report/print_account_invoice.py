@@ -103,7 +103,7 @@ class account_invoice_report(models.AbstractModel):
         data_args = {
                         'doc_ids': docids,
                         'doc_model': 'account.move',
-                        'docs': docs,
+                        'docs': docs_br,
                         'get_lines': self._get_lines,
                         'convert': self.convert,
                         'get_discount': self.get_discount,
