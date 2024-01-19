@@ -74,16 +74,43 @@ class account_invoice_report(models.AbstractModel):
             f_lst.append({'values':lst,})
         return f_lst
 
-    def _get_report_values(self, docids, data=None):
-        docs = self.env['account.move'].browse(docids)
-        return {'doc_ids': docids,
-                'doc_model': 'account.move',
-                'docs': docs,
-                'get_lines': self._get_lines,
-                'convert': self.convert,
-                'get_discount': self.get_discount,
-                'get_child': self.get_child,
-                'get_address': self.get_address
-                }
+    # def _get_report_values(self, docids, data=None):
+    #     docs = self.env['account.move'].browse(docids)
+    #     return {'doc_ids': docids,
+    #             'doc_model': 'account.move',
+    #             'docs': docs,
+    #             'get_lines': self._get_lines,
+    #             'convert': self.convert,
+    #             'get_discount': self.get_discount,
+    #             'get_child': self.get_child,
+    #             'get_address': self.get_address
+    #             }
 
+    @api.model
+    def _get_report_values(self, docids, data=None):
+        context = self._context
+        print ("########## _get_report_values >>>>>>>>>>>> ")
+        print ("########## context: ", context)
+        print ("########## docids: ", docids)
+        print ("########## data: ", data)
+        context = self._context
+        if not docids:
+            payslip_ids = context.get('active_ids', [])
+            docids = payslip_ids
+        payslip_obj = self.env['hr.payslip']
+        docs_br = payslip_obj.browse(docids)
+        
+        data_args = {
+                        'doc_ids': docids,
+                        'doc_model': 'account.move',
+                        'docs': docs,
+                        'get_lines': self._get_lines,
+                        'convert': self.convert,
+                        'get_discount': self.get_discount,
+                        'get_child': self.get_child,
+                        'get_address': self.get_address
+                    }
+        # return report_obj.render('payroll_list_report.report_payroll_list_tr', data_args)
+        return data_args
+ 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
