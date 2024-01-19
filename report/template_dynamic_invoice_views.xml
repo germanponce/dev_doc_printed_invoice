@@ -11,6 +11,8 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
         <t t-foreach="get_lines(o)" t-as="p">
             <t t-set="total_page" t-value="total_page+1"/>
         </t>
+
+
         <t t-set="s_page" t-value="0"/>
         <t t-foreach="get_lines(o)" t-as="l">
             <t t-set="s_page" t-value="s_page+1"/>
