@@ -25,7 +25,6 @@
         <!-- <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field> -->
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">report</field>
-        <field name="print_directly">True</field>
         <field name="paperformat_id" ref="dev_doc_printed_invoice.paperformat_pri_account_invoice"/>
     </record>
 
