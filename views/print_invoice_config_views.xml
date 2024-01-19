@@ -204,7 +204,6 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
     <record id="invoice_print_config_action" model="ir.actions.act_window">
         <field name="name">Invoice Format</field>
         <field name="res_model">invoice.print.config</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
 
