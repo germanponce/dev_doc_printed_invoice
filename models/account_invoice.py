@@ -26,6 +26,11 @@ class AccountInvoice(models.Model):
         context = self._context
         return True
 
+    def get_invoice_name(self):
+        context = self._context
+        print ("############ get_invoice_name >>>>>>>>> ")
+        print ("############ context ", context)
+        return "NO HAY"
 
     def print_invoice_dynamic(self):
         for rec in self:
