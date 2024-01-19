@@ -21,4 +21,9 @@ class AccountInvoice(models.Model):
     
     formate_id = fields.Many2one('invoice.print.config','Report Formate',default=_default_formate)
 
+    def get_move_browse(self):
+        context = self._context
+        print ("######## get_move_browse ....................")
+        print ("######## context ....................", context)
+        return True
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
