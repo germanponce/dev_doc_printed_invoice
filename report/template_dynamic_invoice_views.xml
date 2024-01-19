@@ -11,7 +11,6 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
         <t t-foreach="get_lines(o)" t-as="p">
             <t t-set="total_page" t-value="total_page+1"/>
         </t>
-        <t t-set="o" t-value="docs.get_move_browse(record_id)"/>
         <t t-set="s_page" t-value="0"/>
         <t t-foreach="get_lines(o)" t-as="l">
             <t t-set="s_page" t-value="s_page+1"/>
@@ -250,7 +249,6 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
     <template id="report_account_invoice_document">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
-                <t t-set="o" t-value="docs.get_move_browse(record_id)"/>
                 <t t-call="dev_doc_printed_invoice.report_print_account_invoice_template" t-lang="o.partner_id.lang"/>
 
             </t>
