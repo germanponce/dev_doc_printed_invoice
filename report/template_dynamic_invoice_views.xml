@@ -175,6 +175,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                             </t>
 
                         </div>
+                        <br/>
                     </t>
 
                     <t t-if="o.formate_id.is_tax">
@@ -191,6 +192,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                             </t>
 
                         </div>
+                        <br/>
                     </t>
 
                     <t t-if="o.formate_id.is_total">
@@ -207,6 +209,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                             </t>
 
                         </div>
+                        <br/>
                     </t>
                     
                     <t t-if="o.formate_id.is_sales_man">
