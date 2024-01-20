@@ -28,9 +28,6 @@ class AccountInvoice(models.Model):
 
     def get_invoice_name(self):
         context = self._context
-        print ("############ get_invoice_name >>>>>>>>> ")
-        print ("############ context ", context)
-        print ("############ self ", self)
         if self.name:
             name_invoice = self.name.replace("/","_")
         else:
