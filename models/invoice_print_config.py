@@ -48,9 +48,9 @@ class InvoicePrintConfig(models.Model):
     date_font_size = fields.Float('Tamaño de fuente',default="13",required="1")
     is_date_bold = fields.Boolean('Negrita')
     date_m_top = fields.Float('Posicion Superior',default=142)
-    day_m_left = fields.Float('Day From Left',default=495)
-    month_m_left = fields.Float('Month From Left',default=495)
-    year_m_left = fields.Float('Year From Left',default=495)
+    day_m_left = fields.Float('Día desde la izquierda',default=495)
+    month_m_left = fields.Float('Mes desde la izquierda',default=495)
+    year_m_left = fields.Float('Año desde la izquierda',default=495)
 
     is_phone = fields.Boolean('Print Phone',default=True)
     phone_font_size = fields.Float('Tamaño de fuente',default="13",required="1")
